@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="578.0" prefWidth="1033.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
+
+         <children>
+      <BarChart fx:id="Bar" layoutX="14.0" layoutY="118.0" prefHeight="446.0" prefWidth="625.0" style="-fx-title-side: top; -fx-legend-visible: true;" title="Histogram">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" fx:id="xAxis" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="yAxis" side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <HBox layoutY="4.0" prefHeight="100.0" prefWidth="597.0">
+         <children>
+            <Label prefHeight="172.0" prefWidth="81.0" />
+            <Label prefHeight="143.0" prefWidth="128.0" text="Distribution:">
+               <font>
+                  <Font name="Times New Roman Bold" size="22.0" />
+               </font>
+            </Label>
+            <VBox prefHeight="100.0" prefWidth="383.0">
+               <children>
+                  <Label prefHeight="39.0" prefWidth="109.0" />
+                  <ComboBox fx:id="Combo" prefHeight="25.0" prefWidth="277.0" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <VBox layoutX="644.0" layoutY="131.0" prefHeight="380.0" prefWidth="375.0">
+         <children>
+      
+                        <Label fx:id="HeadingN" alignment="CENTER" prefHeight="81.0" prefWidth="488.0" text="Parameters: ">
+               <font>
+                  <Font name="Times New Roman Bold" size="22.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="62.0" prefWidth="385.0">
+               <children>
+            
+                        <Label fx:id="L1" alignment="CENTER_RIGHT" prefHeight="62.0" prefWidth="148.0" text="Mean:">
+                     <font>
+                        <Font name="Times New Roman" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="62.0" prefWidth="16.0" />
+                  <VBox prefHeight="62.0" prefWidth="181.0">
+                     <children>
+                        <Label prefHeight="14.0" prefWidth="81.0" />
+                        <TextField fx:id="Text1" prefHeight="25.0" prefWidth="211.0" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="62.0" prefWidth="385.0">
+               <children>
+                  <Label fx:id="L2" alignment="CENTER_RIGHT" prefHeight="62.0" prefWidth="149.0" text="Standard Deaviation:">
+                     <font>
+                        <Font name="Times New Roman" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="62.0" prefWidth="16.0" />
+                  <VBox prefHeight="62.0" prefWidth="181.0">
+                     <children>
+                        <Label prefHeight="14.0" prefWidth="81.0" />
+                        <TextField fx:id="Text2" prefHeight="25.0" prefWidth="211.0" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="62.0" prefWidth="385.0">
+               <children>
+            
+                        <Label fx:id="L3" alignment="CENTER_RIGHT" prefHeight="66.0" prefWidth="148.0" text="Samples:">
+                     <font>
+                        <Font name="Times New Roman" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="62.0" prefWidth="16.0" />
+                  <VBox prefHeight="62.0" prefWidth="181.0">
+                     <children>
+                        <Label prefHeight="14.0" prefWidth="81.0" />
+                        <TextField fx:id="Text21" prefHeight="25.0" prefWidth="211.0" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="62.0" prefWidth="385.0">
+               <children>
+                  <VBox prefHeight="62.0" prefWidth="98.0">
+                     <children>
+                        <Label prefHeight="14.0" prefWidth="81.0" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="62.0" prefWidth="171.0">
+                     <children>
+                        <Label prefHeight="25.0" prefWidth="164.0" />
+                  
+                                          <Button fx:id="sim" mnemonicParsing="false" onAction="#simulate" prefHeight="25.0" prefWidth="157.0" text="Simulate" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+
+      </AnchorPane>
